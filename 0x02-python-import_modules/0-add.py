@@ -1,5 +1,8 @@
 a = 1
 b = 2
-from add_0 import add
-print("{} + {} = {}".format(a, b, add(a, b)))
 
+exec_str = "from add import add"
+exec(exec_str)
+
+result = add(a, b)
+print('{} + {} = {}'.format(a, b, result))
