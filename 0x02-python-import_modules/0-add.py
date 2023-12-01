@@ -1,8 +1,9 @@
-a = 1
-b = 2
+#!/usr/bin/python3
 
-exec_str = "from add import add"
-exec(exec_str)
+if __name__ == "__main__":
+    
+    from add import add
 
-result = add(a, b)
-print('{} + {} = {}'.format(a, b, result))
+    a = 4
+    b = 2
+    print("{} + {} = {}".format(a, b, add(a, b)))
